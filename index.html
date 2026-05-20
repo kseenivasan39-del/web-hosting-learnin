@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anish | Historian, Activist & UPSC Aspirant</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        heritage: {
+                            50: '#fdfbf7',
+                            100: '#fbf7ee',
+                            200: '#f6ecd5',
+                            300: '#edd8b1',
+                            400: '#e1be85',
+                            500: '#d29d59',
+                            600: '#c28343',
+                            700: '#a16534',
+                            800: '#82502e',
+                            900: '#694127',
+                        },
+                        slate: {
+                            950: '#0b1329',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d29d59;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-heritage-50 text-slate-900 font-sans selection:bg-heritage-200 selection:text-heritage-900">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-heritage-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3">
+                <span class="font-serif text-2xl font-bold tracking-tight text-slate-900">
+                    ANISH<span class="text-heritage-600">.</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-slate-600 hover:text-heritage-700 font-medium transition-colors">About</a>
+                <a href="#activism" class="text-slate-600 hover:text-heritage-700 font-medium transition-colors">Activism</a>
+                <a href="#upsc" class="text-slate-600 hover:text-heritage-700 font-medium transition-colors">UPSC Hub</a>
+                <a href="#journal" class="text-slate-600 hover:text-heritage-700 font-medium transition-colors">Journal</a>
+                <a href="#contact" class="bg-slate-900 text-white px-5 py-2.5 rounded-lg hover:bg-heritage-700 transition-all text-sm font-semibold tracking-wide">Connect</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-700 focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-heritage-200 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+        <a href="#about" class="block py-2 px-3 rounded-lg text-slate-700 hover:bg-heritage-100 hover:text-heritage-800 font-medium">About</a>
+        <a href="#activism" class="block py-2 px-3 rounded-lg text-slate-700 hover:bg-heritage-100 hover:text-heritage-800 font-medium">Activism</a>
+        <a href="#upsc" class="block py-2 px-3 rounded-lg text-slate-700 hover:bg-heritage-100 hover:text-heritage-800 font-medium">UPSC Hub</a>
+        <a href="#journal" class="block py-2 px-3 rounded-lg text-slate-700 hover:bg-heritage-100 hover:text-heritage-800 font-medium">Journal</a>
+        <a href="#contact" class="block text-center py-2.5 px-3 rounded-lg bg-slate-900 text-white font-semibold">Connect</a>
+    </div>
+</header>
+
+<section class="relative min-h-[85vh] flex items-center bg-gradient-to-br from-heritage-100 via-white to-heritage-50 py-16 overflow-hidden">
+    <!-- Background Decorative Circles -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-heritage-200/40 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-12 right-0 w-80 h-80 bg-heritage-300/30 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-heritage-200 text-heritage-800 uppercase tracking-widest">
+                    <i class="fa-solid fa-feather-pointed"></i> B.A. History • Activist • UPSC Aspirant
+                </span>
+                
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-950 leading-tight">
+                    Understanding the <span class="text-heritage-700 underline decoration-heritage-400 decoration-wavy decoration-2">Past</span>, 
+                    Shaping the <span class="text-slate-800 italic">Present</span>.
+                </h1>
+                
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Hello, I'm Anish. Armed with a deep appreciation for India's diverse history, I spend my days advocating for community empowerment and preparing to enter the civil services to foster systemic, lasting governance.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                    <a href="#upsc" class="group flex items-center justify-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-xl font-semibold shadow-lg shadow-slate-950/10 hover:bg-heritage-700 transition-all duration-300">
+                        Explore UPSC Prep Tracker
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#activism" class="flex items-center justify-center gap-2 bg-white text-slate-800 border-2 border-slate-200 hover:border-heritage-500 px-8 py-4 rounded-xl font-semibold transition-all duration-300">
+                        View Activism Portfolio
+                    </a>
+                </div>
+
+                <!-- Live Milestones -->
+                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-heritage-200/80 max-w-md mx-auto lg:mx-0">
+                    <div>
+                        <p class="font-serif text-2xl sm:text-3xl font-bold text-heritage-700">10k+</p>
+                        <p class="text-xs sm:text-sm text-slate-500 font-medium">Impacted via Campaigns</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-2xl sm:text-3xl font-bold text-heritage-700">3+</p>
+                        <p class="text-xs sm:text-sm text-slate-500 font-medium">Years in Activism</p>
+                    </div>
+                    <div>
+                        <p class="font-serif text-2xl sm:text-3xl font-bold text-heritage-700">History</p>
+                        <p class="text-xs sm:text-sm text-slate-500 font-medium">UPSC Optional</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Collage -->
+            <div class="lg:col-span-5 relative flex justify-center">
+                <div class="relative w-72 h-96 sm:w-80 sm:h-[420px] bg-heritage-200 rounded-2xl p-4 shadow-xl rotate-3 hover:rotate-0 transition-all duration-500">
+                    <!-- Photo Placeholder Representing Anish with an artistic sketch avatar -->
+                    <div class="w-full h-full rounded-xl bg-slate-900 flex flex-col justify-between p-6 text-white relative overflow-hidden">
+                        <!-- Abstract Geometric Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute -right-8 -top-8 w-32 h-32 bg-heritage-500/20 rounded-full blur-xl"></div>
+                        
+                        <div class="relative z-10 flex justify-between items-start">
+                            <span class="text-xs tracking-wider uppercase font-mono bg-white/20 px-2.5 py-1 rounded-full backdrop-blur-sm">Satyamev Jayate</span>
+                            <i class="fa-solid fa-graduation-cap text-heritage-400 text-xl"></i>
+                        </div>
+
+                        <!-- Central Quote -->
+                        <div class="relative z-10 my-auto text-center">
+                            <i class="fa-solid fa-quote-left text-2xl text-heritage-400 opacity-60 mb-2"></i>
+                            <p class="font-serif italic text-lg leading-relaxed text-heritage-100">
+                                "History is not just a study of the past, but a compass for the future of public service."
+                            </p>
+                        </div>
+
+                        <div class="relative z-10 pt-4 border-t border-white/20 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-heritage-400 flex items-center justify-center text-slate-950 font-bold font-serif text-sm">
+                                AK
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold">Anish Kumar</p>
+                                <p class="text-xs text-slate-300">New Delhi, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-white py-3.5 px-5 rounded-xl shadow-lg border border-heritage-100 flex items-center gap-3 animate-bounce">
+                        <span class="flex h-3.5 w-3.5 relative">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500"></span>
+                        </span>
+                        <div>
+                            <p class="text-xs text-slate-500 font-semibold">Current State</p>
+                            <p class="text-sm font-bold text-slate-900">Mains Prep & Fieldwork</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-24 bg-white border-y border-heritage-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-950 mb-4">
+                The Intersection of Knowledge & Action
+            </h2>
+            <div class="w-16 h-1 bg-heritage-500 mx-auto rounded"></div>
+            <p class="text-slate-600 mt-4">
+                How a foundation in historical enquiry drives a fight for systemic justice on the ground, guiding the roadmap into the administrative frameworks of India.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Pillar 1: History -->
+            <div class="bg-heritage-50 p-8 rounded-2xl border border-heritage-200/50 hover:shadow-xl hover:border-heritage-300 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-heritage-100 flex items-center justify-center text-heritage-700 mb-6">
+                        <i class="fa-solid fa-landmark text-xl"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-slate-950 mb-3">B.A. in History</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        Graduating with honors, my focus rested heavily on the evolution of statecraft, agrarian struggles in colonial India, and India's vibrant constitutional history. This shapes my optional subject preparation and my deep understanding of administrative trends.
+                    </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-heritage-200 flex items-center text-xs font-semibold text-heritage-800 uppercase tracking-widest gap-2">
+                    <i class="fa-solid fa-book-open"></i> Optional Subject: History
+                </div>
+            </div>
+
+            <!-- Pillar 2: Activism -->
+            <div class="bg-heritage-50 p-8 rounded-2xl border border-heritage-200/50 hover:shadow-xl hover:border-heritage-300 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-heritage-100 flex items-center justify-center text-heritage-700 mb-6">
+                        <i class="fa-solid fa-hands-holding-child text-xl"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-slate-950 mb-3">Community Activism</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        I believe that policy should never be made in soundproof rooms. From championing preservation of local cultural heritage to spearheading a chain of rural community libraries, I remain grounded in reality to understand how citizens interact with public schemes.
+                    </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-heritage-200 flex items-center text-xs font-semibold text-heritage-800 uppercase tracking-widest gap-2">
+                    <i class="fa-solid fa-bullhorn"></i> Focus: Literacy & Heritage
+                </div>
+            </div>
+
+            <!-- Pillar 3: UPSC Aspirant -->
+            <div class="bg-heritage-50 p-8 rounded-2xl border border-heritage-200/50 hover:shadow-xl hover:border-heritage-300 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-heritage-100 flex items-center justify-center text-heritage-700 mb-6">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-slate-950 mb-3">UPSC CSE Aspirant</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        Preparing for India's premier examination is more than a test of memory; it is an academic pilgrimage. I am sharpening my understanding of governance, ethics, and developmental economy to transition from community-level changes to systemic administration.
+                    </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-heritage-200 flex items-center text-xs font-semibold text-heritage-800 uppercase tracking-widest gap-2">
+                    <i class="fa-solid fa-pen-fancy"></i> Focus: GS & Ethics
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="activism" class="py-24 bg-heritage-100/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <!-- Left description -->
+            <div class="lg:col-span-5 space-y-6 lg:sticky lg:top-24 h-fit">
+                <span class="text-xs font-bold tracking-widest uppercase text-heritage-700 bg-heritage-200 px-3.5 py-1.5 rounded-full">
+                    Grassroots Movements
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-950">
+                    Stories of Advocacy and Community Action
+                </h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Over the past three years, I have actively worked with civil society organizations, local schools, and community elders to execute social projects. Click on any campaign on the right to read more details.
+                </p>
+                
+                <!-- Quick Metric Grid -->
+                <div class="grid grid-cols-2 gap-4 pt-6">
+                    <div class="bg-white p-5 rounded-xl border border-heritage-200">
+                        <p class="text-2xl font-bold text-slate-900">4,500+</p>
+                        <p class="text-xs text-slate-500 font-semibold mt-1">Books Collected for Rural Libraries</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-heritage-200">
+                        <p class="text-2xl font-bold text-slate-900">12+</p>
+                        <p class="text-xs text-slate-500 font-semibold mt-1">Heritage Walks Organized</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Timeline/Accordion -->
+            <div class="lg:col-span-7 space-y-4">
+                <!-- Timeline Item 1 -->
+                <div class="campaign-card bg-white p-6 rounded-2xl border border-heritage-200 hover:shadow-md cursor-pointer transition-all duration-300 active" onclick="toggleCampaign(0)">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 rounded-full bg-heritage-100 flex items-center justify-center text-heritage-700 shrink-0 font-bold">01</span>
+                            <div>
+                                <h3 class="font-serif text-lg sm:text-xl font-bold text-slate-900">Project "Pustakalaya"</h3>
+                                <p class="text-xs text-heritage-600 font-semibold uppercase tracking-wide">Education & Literacy • 2024</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300" id="chevron-0"></i>
+                    </div>
+                    <div class="campaign-detail mt-4 pl-14 text-slate-600 text-sm sm:text-base space-y-3 hidden" id="detail-0">
+                        <p>
+                            Recognizing the lack of quality reading resources in remote parts of our district, I led a youth campaign that mobilized donations to establish 3 community-run libraries.
+                        </p>
+                        <div class="bg-heritage-50 p-3.5 rounded-xl border border-heritage-200 text-xs text-heritage-800 font-mono">
+                            <strong>Impact Accomplished:</strong> Open access to standard competitive exam preparation guides, non-fiction and textbooks for over 1,200 rural students.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="campaign-card bg-white p-6 rounded-2xl border border-heritage-200 hover:shadow-md cursor-pointer transition-all duration-300" onclick="toggleCampaign(1)">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 rounded-full bg-heritage-100 flex items-center justify-center text-heritage-700 shrink-0 font-bold">02</span>
+                            <div>
+                                <h3 class="font-serif text-lg sm:text-xl font-bold text-slate-900">Heritage Defense Collective</h3>
+                                <p class="text-xs text-heritage-600 font-semibold uppercase tracking-wide">Historical Preservation • 2024-2025</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300" id="chevron-1"></i>
+                    </div>
+                    <div class="campaign-detail mt-4 pl-14 text-slate-600 text-sm sm:text-base space-y-3 hidden" id="detail-1">
+                        <p>
+                            To prevent encroachment and neglect of valuable 18th-century local heritage pillars, we mobilized community cleaning drives and petitioned the local administration for active archaeological survey protection.
+                        </p>
+                        <div class="bg-heritage-50 p-3.5 rounded-xl border border-heritage-200 text-xs text-heritage-800 font-mono">
+                            <strong>Impact Accomplished:</strong> Successful registration of the local monument with State Archeology department; placed directional informational boards detailing local oral history.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="campaign-card bg-white p-6 rounded-2xl border border-heritage-200 hover:shadow-md cursor-pointer transition-all duration-300" onclick="toggleCampaign(2)">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 rounded-full bg-heritage-100 flex items-center justify-center text-heritage-700 shrink-0 font-bold">03</span>
+                            <div>
+                                <h3 class="font-serif text-lg sm:text-xl font-bold text-slate-900">RTI Awareness Workshops</h3>
+                                <p class="text-xs text-heritage-600 font-semibold uppercase tracking-wide">Democracy & Right to Information • 2025</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300" id="chevron-2"></i>
+                    </div>
+                    <div class="campaign-detail mt-4 pl-14 text-slate-600 text-sm sm:text-base space-y-3 hidden" id="detail-2">
+                        <p>
+                            Collaborating with constitutional law students, we organized workshops for rural self-help groups (SHGs) on filing Right to Information (RTI) petitions. This empowered local women to seek transparent metrics on MGNREGA disbursements.
+                        </p>
+                        <div class="bg-heritage-50 p-3.5 rounded-xl border border-heritage-200 text-xs text-heritage-800 font-mono">
+                            <strong>Impact Accomplished:</strong> 40+ local citizens successfully learned how to draft RTIs; uncovered key distribution backlogs in ration cards.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="campaign-card bg-white p-6 rounded-2xl border border-heritage-200 hover:shadow-md cursor-pointer transition-all duration-300" onclick="toggleCampaign(3)">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-10 rounded-full bg-heritage-100 flex items-center justify-center text-heritage-700 shrink-0 font-bold">04</span>
+                            <div>
+                                <h3 class="font-serif text-lg sm:text-xl font-bold text-slate-900">Right to Education Access Drive</h3>
+                                <p class="text-xs text-heritage-600 font-semibold uppercase tracking-wide">Education Policy Outreach • 2025-2026</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300" id="chevron-3"></i>
+                    </div>
+                    <div class="campaign-detail mt-4 pl-14 text-slate-600 text-sm sm:text-base space-y-3 hidden" id="detail-3">
+                        <p>
+                            We initiated a doorstep enrollment program mapping underprivileged children to local schools under Section 12(1)(c) of the RTE Act. This section mandates a 25% reservation for weaker sections.
+                        </p>
+                        <div class="bg-heritage-50 p-3.5 rounded-xl border border-heritage-200 text-xs text-heritage-800 font-mono">
+                            <strong>Impact Accomplished:</strong> Supported 85+ children from marginal farming families in obtaining proper school admissions and materials.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="upsc" class="py-24 bg-slate-950 text-white relative overflow-hidden">
+    <!-- Starry pattern backgrounds -->
+    <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:16px_16px] opacity-30"></div>
+    <div class="absolute -top-40 right-1/4 w-96 h-96 bg-heritage-600/10 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-xs font-bold tracking-widest uppercase text-heritage-400 bg-slate-900 px-3.5 py-1.5 rounded-full border border-heritage-500/30">
+                Interactive Learning Hub
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-4 mb-3">
+                UPSC Prep Matrix & History Desk
+            </h2>
+            <p class="text-slate-300">
+                A window into my dedication. Track my current syllabus progress or try out a historical flashcard quiz to test your own command of Modern Indian History!
+            </p>
+        </div>
+
+        <!-- Interactive Hub Tab Buttons -->
+        <div class="flex justify-center mb-12">
+            <div class="inline-flex p-1.5 bg-slate-900 rounded-xl border border-slate-800">
+                <button onclick="switchTab('tracker')" id="tab-btn-tracker" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 bg-heritage-600 text-white">
+                    <i class="fa-solid fa-list-check mr-2"></i>Syllabus Tracker
+                </button>
+                <button onclick="switchTab('quiz')" id="tab-btn-quiz" class="px-5 py-2.5 rounded-lg text-sm font-semibold text-slate-400 hover:text-white transition-all duration-200">
+                    <i class="fa-solid fa-graduation-cap mr-2"></i>History optional quiz
+                </button>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT 1: Syllabus Tracker -->
+        <div id="tab-tracker" class="block">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Syllabus Sidebar Status Summary -->
+                <div class="lg:col-span-4 bg-slate-900/80 p-6 rounded-2xl border border-slate-800 space-y-6">
+                    <h3 class="font-serif text-xl font-semibold text-heritage-300 flex items-center gap-2">
+                        <i class="fa-solid fa-award"></i> Prep Analytics
+                    </h3>
+                    
+                    <div>
+                        <div class="flex justify-between text-xs text-slate-400 font-semibold uppercase tracking-wider mb-2">
+                            <span>Syllabus Covered</span>
+                            <span id="overall-percentage">74%</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                            <div id="overall-bar" class="bg-gradient-to-r from-heritage-500 to-heritage-300 h-full rounded-full transition-all duration-500" style="width: 74%;"></div>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3.5 text-sm">
+                        <li class="flex items-center justify-between">
+                            <span class="text-slate-400">Prelims Practice Mock Tests:</span>
+                            <span class="font-bold text-heritage-400">42 done / 60</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-slate-400">History Answers Written:</span>
+                            <span class="font-bold text-heritage-400">320+ questions</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-slate-400">Optional Revision Cycle:</span>
+                            <span class="font-bold text-heritage-400">2nd reading</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-slate-400">Latest CSAT Score Mock:</span>
+                            <span class="font-bold text-heritage-400">114 / 200</span>
+                        </li>
+                    </ul>
+
+                    <div class="bg-slate-950/80 p-4 rounded-xl border border-slate-800 text-center">
+                        <p class="text-xs text-slate-400 italic">"The shield of administration is forged through relentless revision."</p>
+                    </div>
+                </div>
+
+                <!-- Live Checklist Cards -->
+                <div class="lg:col-span-8 space-y-4">
+                    <p class="text-sm text-slate-400 mb-2">
+                        <i class="fa-solid fa-circle-info mr-1 text-heritage-400"></i> Click/Toggle chapters to update my real-time mock study desk!
+                    </p>
+                    
+                    <!-- Paper 1 -->
+                    <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="font-serif font-semibold text-heritage-300 flex items-center gap-2">
+                                <i class="fa-solid fa-hourglass-start"></i> GS Paper 1: History, Culture & Heritage
+                            </h4>
+                            <span class="text-xs bg-heritage-800/20 text-heritage-300 font-mono px-2.5 py-1 rounded-full border border-heritage-800/50">85% Done</span>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" checked class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">Ancient & Medieval India</p>
+                                    <p class="text-xs text-slate-400">Art, Architecture, Lit & Sects</p>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" checked class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">Modern History & Freedom Struggle</p>
+                                    <p class="text-xs text-slate-400">1757 to 1947 Critical Events</p>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" checked class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">Post-Independence Consolidation</p>
+                                    <p class="text-xs text-slate-400">Reorganization, Tribal Integration</p>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">World History</p>
+                                    <p class="text-xs text-slate-400">Industrialization, World Wars</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Paper 2 -->
+                    <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="font-serif font-semibold text-heritage-300 flex items-center gap-2">
+                                <i class="fa-solid fa-scale-balanced"></i> GS Paper 2: Polity, Constitution & Justice
+                            </h4>
+                            <span class="text-xs bg-heritage-800/20 text-heritage-300 font-mono px-2.5 py-1 rounded-full border border-heritage-800/50">75% Done</span>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" checked class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">Indian Constitution</p>
+                                    <p class="text-xs text-slate-400">Significant Provisions, Basic Structure</p>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" checked class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">Grassroots Governance</p>
+                                    <p class="text-xs text-slate-400">Panchayati Raj (73rd/74th Amend)</p>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">International Relations</p>
+                                    <p class="text-xs text-slate-400">Bilateral ties & Global groupings</p>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" checked class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">Welfare Schemes & Social Sector</p>
+                                    <p class="text-xs text-slate-400">Health, Education, Poverty targets</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Paper 3 -->
+                    <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-800">
+                        <div class="flex justify-between items-center mb-4">
+                            <h4 class="font-serif font-semibold text-heritage-300 flex items-center gap-2">
+                                <i class="fa-solid fa-flask-vial"></i> GS Paper 3 & 4: Tech, Ethics & Optional
+                            </h4>
+                            <span class="text-xs bg-heritage-800/20 text-heritage-300 font-mono px-2.5 py-1 rounded-full border border-heritage-800/50">62% Done</span>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" checked class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">Ethics, Integrity & Aptitude</p>
+                                    <p class="text-xs text-slate-400">Case Studies & Philosophical thinkers</p>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">Optional: History Paper I</p>
+                                    <p class="text-xs text-slate-400">Archaeological Sources to Early Medieval</p>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" checked class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">Optional: History Paper II</p>
+                                    <p class="text-xs text-slate-400">European colonial expansion to Cold War</p>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-800/30 cursor-pointer transition-colors">
+                                <input type="checkbox" class="syllabus-checkbox rounded border-slate-700 text-heritage-600 focus:ring-heritage-500 mt-1 h-4 w-4" onchange="updateTracker()">
+                                <div>
+                                    <p class="text-sm font-semibold text-slate-200">Economy & Internal Security</p>
+                                    <p class="text-xs text-slate-400">Budgeting, Agriculture, Cybersecurity</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT 2: History Optional Quiz -->
+        <div id="tab-quiz" class="hidden">
+            <div class="max-w-3xl mx-auto bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-8">
+                <div class="flex justify-between items-center mb-6 pb-4 border-b border-slate-800">
+                    <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Optional Subject: Modern History</span>
+                    <span id="quiz-progress-text" class="text-sm font-semibold text-heritage-400">Question 1 of 5</span>
+                </div>
+
+                <!-- Flashcard body -->
+                <div id="quiz-body" class="space-y-6">
+                    <h3 id="quiz-question" class="font-serif text-xl sm:text-2xl font-semibold leading-relaxed">
+                        What was the immediate cause for the launch of the Swadeshi Movement in 1905?
+                    </h3>
+
+                    <div class="grid grid-cols-1 gap-3.5" id="quiz-options">
+                        <!-- Options generated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Footer with Next & Reset controls -->
+                <div class="flex justify-between items-center mt-8 pt-4 border-t border-slate-800">
+                    <div class="text-sm text-slate-400">
+                        Score: <span id="quiz-score" class="font-bold text-white">0</span>/5
+                    </div>
+                    <button id="next-btn" onclick="nextQuestion()" disabled class="px-5 py-2.5 rounded-lg text-sm font-bold bg-slate-800 text-slate-400 cursor-not-allowed transition-all">
+                        Select an option
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="journal" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-xs font-bold tracking-widest uppercase text-heritage-700 bg-heritage-100 px-3.5 py-1.5 rounded-full">
+                My Musings
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-950 mt-4 mb-3">
+                Essays, Notes & Constitutional Thoughts
+            </h2>
+            <p class="text-slate-600">
+                A showcase of structured answers, policy analyses, and reflections on local administration and social history.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <article class="bg-heritage-50 rounded-2xl border border-heritage-200/60 overflow-hidden flex flex-col justify-between hover:shadow-lg transition-all duration-300">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-heritage-700 bg-heritage-100 px-2.5 py-1 rounded">Governance</span>
+                        <span class="text-xs text-slate-500">10 Min Read</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-950 hover:text-heritage-700 transition-colors">
+                        <a href="#journal" onclick="openJournalModal(1)">Grassroots Governance: Realizing Gandhi's Gram Swaraj</a>
+                    </h3>
+                    <p class="text-slate-600 text-sm line-clamp-3">
+                        Analyzing the challenges, finance commissions, and triumphs of the 73rd and 74th Constitutional Amendment Acts at the block development level. How devolution of power holds the key to modern community development.
+                    </p>
+                </div>
+                <div class="p-6 pt-0 border-t border-heritage-200/50 flex items-center justify-between text-xs font-semibold text-heritage-800">
+                    <span>By Anish • March 2026</span>
+                    <button onclick="openJournalModal(1)" class="hover:underline flex items-center gap-1">Read Essay <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="bg-heritage-50 rounded-2xl border border-heritage-200/60 overflow-hidden flex flex-col justify-between hover:shadow-lg transition-all duration-300">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-heritage-700 bg-heritage-100 px-2.5 py-1 rounded">History Optional</span>
+                        <span class="text-xs text-slate-500">15 Min Read</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-950 hover:text-heritage-700 transition-colors">
+                        <a href="#journal" onclick="openJournalModal(2)">Agrarian Crises and Colonial Policies: The De-industrialization Narrative</a>
+                    </h3>
+                    <p class="text-slate-600 text-sm line-clamp-3">
+                        A critical exploration of the land revenue systems (Permanent Settlement vs Ryotwari) introduced by the British Empire and their direct linkages to recurring 19th-century peasant rebellions.
+                    </p>
+                </div>
+                <div class="p-6 pt-0 border-t border-heritage-200/50 flex items-center justify-between text-xs font-semibold text-heritage-800">
+                    <span>By Anish • Feb 2026</span>
+                    <button onclick="openJournalModal(2)" class="hover:underline flex items-center gap-1">Read Essay <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="bg-heritage-50 rounded-2xl border border-heritage-200/60 overflow-hidden flex flex-col justify-between hover:shadow-lg transition-all duration-300">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-heritage-700 bg-heritage-100 px-2.5 py-1 rounded">Ethics & Society</span>
+                        <span class="text-xs text-slate-500">8 Min Read</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-950 hover:text-heritage-700 transition-colors">
+                        <a href="#journal" onclick="openJournalModal(3)">The Ethical Civil Servant: Merging Duty with Empathy</a>
+                    </h3>
+                    <p class="text-slate-600 text-sm line-clamp-3">
+                        Reflecting on foundational values of the Civil Services. Why compassion and dedicated emotional intelligence are as critical to public policymaking as technical expertise and neutrality.
+                    </p>
+                </div>
+                <div class="p-6 pt-0 border-t border-heritage-200/50 flex items-center justify-between text-xs font-semibold text-heritage-800">
+                    <span>By Anish • Jan 2026</span>
+                    <button onclick="openJournalModal(3)" class="hover:underline flex items-center gap-1">Read Essay <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<div id="journal-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white text-slate-900 rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto shadow-2xl border border-heritage-200 custom-scrollbar flex flex-col">
+        <!-- Header -->
+        <div class="p-6 border-b border-heritage-100 flex justify-between items-start sticky top-0 bg-white z-10">
+            <div>
+                <span id="modal-category" class="text-xs font-semibold uppercase tracking-wider text-heritage-700 bg-heritage-100 px-2.5 py-1 rounded">Governance</span>
+                <h3 id="modal-title" class="font-serif text-xl sm:text-2xl font-bold mt-2 text-slate-950">Draft Title</h3>
+            </div>
+            <button onclick="closeJournalModal()" class="text-slate-400 hover:text-slate-600 p-1">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+        <!-- Content Body -->
+        <div class="p-6 space-y-4 text-slate-700 leading-relaxed text-sm sm:text-base">
+            <div id="modal-content" class="space-y-4">
+                <!-- Injected text -->
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="p-6 border-t border-heritage-100 flex justify-between items-center bg-heritage-50">
+            <span class="text-xs text-slate-500 font-semibold" id="modal-author">By Anish</span>
+            <button onclick="closeJournalModal()" class="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-slate-800 transition-colors">Close Reader</button>
+        </div>
+    </div>
+</div>
+
+<section id="contact" class="py-24 bg-heritage-100 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl shadow-xl border border-heritage-200 overflow-hidden p-8 sm:p-12 relative">
+            <div class="absolute top-0 right-0 w-48 h-48 bg-heritage-100 rounded-full blur-3xl -z-10"></div>
+            
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="font-serif text-3xl font-bold text-slate-950">Let's Collaborate for Change</h2>
+                <p class="text-slate-600 mt-2">
+                    Whether you are an NGO looking for collaborative support, a fellow UPSC aspirant discussing Optionals, or a community builder—feel free to reach out.
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Your Name</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-heritage-500 focus:border-transparent transition-all" placeholder="Enter name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
+                        <input type="email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-heritage-500 focus:border-transparent transition-all" placeholder="name@domain.com">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-2">Subject / Purpose</label>
+                    <select required class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-heritage-500 focus:border-transparent transition-all">
+                        <option value="">Choose an option...</option>
+                        <option value="Collab">Activism & Heritage Projects</option>
+                        <option value="UPSC">UPSC Discussion / Peer Study</option>
+                        <option value="Speaking">Speaking / Guest Panel Invitations</option>
+                        <option value="Other">General Discussion</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-2">Your Message</label>
+                    <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-heritage-500 focus:border-transparent transition-all" placeholder="How can we build a positive impact together?"></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-heritage-700 text-white font-semibold px-8 py-3.5 rounded-xl shadow-lg transition-all duration-300">
+                        Send Message <i class="fa-solid fa-paper-plane text-xs"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Custom Modal for Success Messages (Replaces window.alert) -->
+<div id="success-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white text-slate-900 rounded-2xl max-w-md w-full p-6 text-center shadow-2xl border border-heritage-200 animate-scaleUp">
+        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fa-solid fa-check text-2xl"></i>
+        </div>
+        <h3 class="font-serif text-xl font-bold mb-2">Message Received!</h3>
+        <p class="text-sm text-slate-600 mb-6">
+            Thank you for reaching out. I value grassroots collaboration and public discussions highly. I'll get back to you within 48 hours.
+        </p>
+        <button onclick="closeSuccessModal()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-xl transition-all">
+            Understood
+        </button>
+    </div>
+</div>
+
+<footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div class="space-y-4">
+                <span class="font-serif text-2xl font-bold tracking-tight text-white">
+                    ANISH<span class="text-heritage-500">.</span>
+                </span>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Connecting scholarly insights of historical frameworks with proactive citizenship for administrative reform.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors" aria-label="X/Twitter"><i class="fa-brands fa-x-twitter text-lg"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors" aria-label="GitHub"><i class="fa-brands fa-github text-lg"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram text-lg"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-serif font-bold text-sm tracking-widest uppercase mb-4">Core Philosophy</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><span class="text-heritage-400 font-semibold">Decentralization:</span> Restoring power to local bodies.</li>
+                    <li><span class="text-heritage-400 font-semibold">Heritage Care:</span> Keeping communal origins alive.</li>
+                    <li><span class="text-heritage-400 font-semibold">Integrity:</span> Values of ethical administration.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-serif font-bold text-sm tracking-widest uppercase mb-4">UPSC Resources</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="https://www.upsc.gov.in" target="_blank" class="hover:underline hover:text-white">UPSC Official Portal</a></li>
+                    <li><a href="#upsc" class="hover:underline hover:text-white">Optional Study Roadmap</a></li>
+                    <li><a href="#journal" class="hover:underline hover:text-white">History Model Answer Drafts</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-serif font-bold text-sm tracking-widest uppercase mb-4">Connect Directly</h4>
+                <p class="text-sm leading-relaxed mb-4">Have questions about B.A. History, UPSC options, or campaign materials?</p>
+                <a href="mailto:anish.aspirant@example.com" class="inline-flex items-center gap-2 text-white bg-slate-900 border border-slate-800 hover:border-heritage-500 hover:bg-slate-900/50 px-4 py-2 rounded-lg text-sm transition-all duration-300">
+                    <i class="fa-regular fa-envelope"></i> anish.aspirant@example.com
+                </a>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+            <p>&copy; 2026 Anish Kumar. All Rights Reserved. Built with Constitutional Dedication.</p>
+            <p class="flex items-center gap-1 mt-4 sm:mt-0">
+                Made with <i class="fa-solid fa-heart text-red-500"></i> in New Delhi, India.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on click
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
+    // Interactive Activism Campaign Card Toggles
+    function toggleCampaign(id) {
+        const cards = document.querySelectorAll('.campaign-card');
+        const details = document.querySelectorAll('.campaign-detail');
+        const chevrons = document.querySelectorAll('.fa-chevron-down');
+
+        details.forEach((detail, i) => {
+            if (i === id) {
+                const isOpen = !detail.classList.contains('hidden');
+                detail.classList.toggle('hidden', isOpen);
+                cards[i].classList.toggle('bg-heritage-50', !isOpen);
+                chevrons[i].classList.toggle('rotate-180', !isOpen);
+            } else {
+                detail.classList.add('hidden');
+                cards[i].classList.remove('bg-heritage-50');
+                chevrons[i].classList.remove('rotate-180');
+            }
+        });
+    }
+    // Set first Campaign open by default
+    document.addEventListener("DOMContentLoaded", () => {
+        toggleCampaign(0);
+        loadQuestion(); // For the History quiz
+    });
+
+    // UPSC Tracker Logic
+    function updateTracker() {
+        const checkboxes = document.querySelectorAll('.syllabus-checkbox');
+        const total = checkboxes.length;
+        let checkedCount = 0;
+        
+        checkboxes.forEach(box => {
+            if (box.checked) {
+                checkedCount++;
+            }
+        });
+
+        const percentage = Math.round((checkedCount / total) * 100);
+        document.getElementById('overall-percentage').innerText = percentage + '%';
+        document.getElementById('overall-bar').style.width = percentage + '%';
+    }
+
+    // Interactive Hub Tab Switching
+    function switchTab(tabName) {
+        const trackerTab = document.getElementById('tab-tracker');
+        const quizTab = document.getElementById('tab-quiz');
+        const btnTracker = document.getElementById('tab-btn-tracker');
+        const btnQuiz = document.getElementById('tab-btn-quiz');
+
+        if (tabName === 'tracker') {
+            trackerTab.classList.remove('hidden');
+            quizTab.classList.add('hidden');
+            btnTracker.className = 'px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 bg-heritage-600 text-white';
+            btnQuiz.className = 'px-5 py-2.5 rounded-lg text-sm font-semibold text-slate-400 hover:text-white transition-all duration-200';
+        } else {
+            trackerTab.classList.add('hidden');
+            quizTab.classList.remove('hidden');
+            btnQuiz.className = 'px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 bg-heritage-600 text-white';
+            btnTracker.className = 'px-5 py-2.5 rounded-lg text-sm font-semibold text-slate-400 hover:text-white transition-all duration-200';
+        }
+    }
+
+    // Interactive History Flashcard Quiz Data
+    const quizData = [
+        {
+            question: "What was the immediate cause for the launch of the Swadeshi Movement in 1905?",
+            options: [
+                "Lord Curzon's declaration of Partition of Bengal",
+                "Arrest of Bal Gangadhar Tilak",
+                "The Jallianwala Bagh Massacre",
+                "Introduction of the Rowlatt Act"
+            ],
+            correct: 0,
+            explanation: "Lord Curzon proclaimed the Partition of Bengal in July 1905, leading to massive protests launching the Swadeshi Movement at Town Hall, Calcutta."
+        },
+        {
+            question: "Who was the founder of the 'Satyashodhak Samaj' in Maharashtra (1873)?",
+            options: [
+                "Dr. B. R. Ambedkar",
+                "Jyotirao Phule",
+                "Mahadev Govind Ranade",
+                "Bal Gangadhar Tilak"
+            ],
+            correct: 1,
+            explanation: "Mahatma Jyotirao Phule founded Satyashodhak Samaj to champion social equity, education for girls, and rights for marginalized castes."
+        },
+        {
+            question: "Under whose Governor-Generalship was the system of Permanent Settlement introduced?",
+            options: [
+                "Lord Warren Hastings",
+                "Lord William Bentinck",
+                "Lord Cornwallis",
+                "Lord Wellesley"
+            ],
+            correct: 2,
+            explanation: "Lord Cornwallis introduced the Permanent Revenue Settlement in Bengal & Bihar in 1793, turning Zamindars into landowners with absolute security of tenure."
+        },
+        {
+            question: "The famous Nehru Report of 1928 was written by a committee headed by:",
+            options: [
+                "Jawaharlal Nehru",
+                "Motilal Nehru",
+                "Tej Bahadur Sapru",
+                "Subhas Chandra Bose"
+            ],
+            correct: 1,
+            explanation: "Motilal Nehru chaired the committee that drafted the Nehru Report of 1928, demanding Dominion Status and a joint electorate framework for India."
+        },
+        {
+            question: "Which battle marked the foundational beginning of East India Company's rule in India?",
+            options: [
+                "Battle of Buxar (1764)",
+                "Third Battle of Panipat (1761)",
+                "Battle of Plassey (1757)",
+                "Anglo-Mysore Wars"
+            ],
+            correct: 2,
+            explanation: "The Battle of Plassey in 1757, where Robert Clive defeated Nawab Siraj-ud-Daulah, laid the territorial foundation of British expansion."
+        }
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let selectedOptionIdx = null;
+
+    function loadQuestion() {
+        const data = quizData[currentQuestionIndex];
+        document.getElementById('quiz-progress-text').innerText = `Question ${currentQuestionIndex + 1} of 5`;
+        document.getElementById('quiz-question').innerText = data.question;
+
+        const optionsDiv = document.getElementById('quiz-options');
+        optionsDiv.innerHTML = '';
+
+        data.options.forEach((opt, idx) => {
+            const button = document.createElement('button');
+            button.className = "w-full text-left p-4 rounded-xl border border-slate-800 hover:border-heritage-500 bg-slate-900/40 text-sm sm:text-base hover:bg-slate-850 transition-all focus:outline-none focus:ring-2 focus:ring-heritage-600";
+            button.innerHTML = `
+                <div class="flex items-center gap-3">
+                    <span class="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center font-semibold text-xs text-slate-400 uppercase shrink-0">${String.fromCharCode(65 + idx)}</span>
+                    <span>${opt}</span>
+                </div>
+            `;
+            button.onclick = () => selectOption(idx, button);
+            optionsDiv.appendChild(button);
+        });
+
+        // Reset state
+        selectedOptionIdx = null;
+        const nextBtn = document.getElementById('next-btn');
+        nextBtn.innerText = "Select an option";
+        nextBtn.disabled = true;
+        nextBtn.className = "px-5 py-2.5 rounded-lg text-sm font-bold bg-slate-800 text-slate-400 cursor-not-allowed transition-all";
+    }
+
+    function selectOption(idx, buttonElement) {
+        if (selectedOptionIdx !== null) return; // Only allow one selection per question
+
+        selectedOptionIdx = idx;
+        const data = quizData[currentQuestionIndex];
+        const optionsList = document.getElementById('quiz-options').children;
+
+        // Visual Validation
+        if (idx === data.correct) {
+            score++;
+            document.getElementById('quiz-score').innerText = score;
+            buttonElement.classList.add('border-emerald-500', 'bg-emerald-950/30');
+            buttonElement.querySelector('span').classList.add('bg-emerald-500', 'text-white');
+        } else {
+            buttonElement.classList.add('border-rose-500', 'bg-rose-950/30');
+            buttonElement.querySelector('span').classList.add('bg-rose-500', 'text-white');
+            
+            // Highlight Correct Answer
+            const correctBtn = optionsList[data.correct];
+            correctBtn.classList.add('border-emerald-500', 'bg-emerald-950/30');
+            correctBtn.querySelector('span').classList.add('bg-emerald-500', 'text-white');
+        }
+
+        // Add detailed feedback inline
+        const feedbackDiv = document.createElement('div');
+        feedbackDiv.className = "mt-4 p-4 rounded-xl bg-slate-800/80 border border-slate-700 text-xs sm:text-sm text-slate-300 leading-relaxed";
+        feedbackDiv.innerHTML = `<strong>Explanation:</strong> ${data.explanation}`;
+        document.getElementById('quiz-body').appendChild(feedbackDiv);
+
+        // Enable next button
+        const nextBtn = document.getElementById('next-btn');
+        nextBtn.disabled = false;
+        nextBtn.innerText = currentQuestionIndex < 4 ? "Next Question" : "Complete Quiz";
+        nextBtn.className = "px-5 py-2.5 rounded-lg text-sm font-bold bg-heritage-600 text-white hover:bg-heritage-500 transition-all shadow-md";
+    }
+
+    function nextQuestion() {
+        if (currentQuestionIndex < 4) {
+            currentQuestionIndex++;
+            loadQuestion();
+            // Remove previous explanation if any
+            const feedback = document.querySelector('#quiz-body div');
+            if (feedback && feedback.parentNode === document.getElementById('quiz-body')) {
+                feedback.remove();
+            }
+        } else {
+            // Quiz Complete State
+            const quizBody = document.getElementById('quiz-body');
+            quizBody.innerHTML = `
+                <div class="text-center py-8 space-y-4">
+                    <div class="w-20 h-20 bg-heritage-600/20 text-heritage-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-graduation-cap text-3xl"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold">Quiz Finished!</h3>
+                    <p class="text-slate-300 max-w-md mx-auto">
+                        You scored <strong class="text-heritage-400 font-mono text-xl">${score} out of 5</strong>. Great attempt exploring history optional concepts! Keep pushing forward in civil service preparation.
+                    </p>
+                    <button onclick="resetQuiz()" class="mt-4 px-6 py-2.5 rounded-xl text-sm font-bold bg-slate-800 hover:bg-slate-700 text-white transition-all">
+                        Try Again
+                    </button>
+                </div>
+            `;
+            const nextBtn = document.getElementById('next-btn');
+            nextBtn.classList.add('hidden');
+        }
+    }
+
+    function resetQuiz() {
+        currentQuestionIndex = 0;
+        score = 0;
+        document.getElementById('quiz-score').innerText = score;
+        const nextBtn = document.getElementById('next-btn');
+        nextBtn.classList.remove('hidden');
+        
+        // Restore default template
+        const quizBody = document.getElementById('quiz-body');
+        quizBody.innerHTML = `
+            <h3 id="quiz-question" class="font-serif text-xl sm:text-2xl font-semibold leading-relaxed"></h3>
+            <div class="grid grid-cols-1 gap-3.5" id="quiz-options"></div>
+        `;
+        
+        loadQuestion();
+    }
+
+    // Modal Essays Content mapping
+    const essayDatabase = {
+        1: {
+            category: "Governance",
+            title: "Grassroots Governance: Realizing Gandhi's Gram Swaraj",
+            content: `
+                <p>Mahatma Gandhi’s conceptual model of ‘Gram Swaraj’ stood for complete self-reliance of local bodies as sovereign republics. Post the 73rd and 74th Amendments of the Indian Constitution, constitutional shape was given to this ideal, introducing Rural & Urban Local Bodies (Panchayati Raj and Municipalities).</p>
+                
+                <p>However, true devolution of power rests on the pillars of 'Three Fs': Funds, Functions, and Functionaries. Over the years, state executives have often proven reluctant to step back and let local governance direct their own resource channels. The state bureaucracy continues to wield disproportionate authority relative to elected village heads (Sarpanches).</p>
+                
+                <p>During my grassroots activist workshops, we analyzed how enabling local Self-Help Groups (SHGs) and empowering rural communities with constitutional litigations (like the Right to Information) shifts the needle. By cultivating digital literacy at the Gram Sabha level, we can ensure transparent social auditing. This aligns the grassroots closely with the dream of Gandhi's decentralized republic.</p>
+            `
+        },
+        2: {
+            category: "History Optional",
+            title: "Agrarian Crises & British Land Revenue Policies",
+            content: `
+                <p>To satisfy their high financial requirements and fund trade expansions, the British East India Company introduced experimental, inflexible land revenue settlements across India, radically rewriting traditional farming security.</p>
+                
+                <p><strong>The Permanent Settlement (1793):</strong> Introduced by Cornwallis in Bengal, Bihar, and Odisha, this made Zamindars local owners of the land. Under the brutal 'Sunset Law', if the fixed revenue wasn't paid by sunset of the specified date, the state confiscated and auctioned the zamindari estates, creating highly exploitative absentee landlords.</p>
+                
+                <p><strong>The Ryotwari and Mahalwari Systems:</strong> Under Ryotwari (pioneered by Thomas Munro in Southern India), the state collected taxes directly from individual farmers (Ryots) at extremely high, frequently revised rates, forcing poor peasants directly into the clutches of moneylenders.</p>
+                
+                <p>This systematic economic drainage resulted in peasant-led resistances like the Indigo Revolt (1859) and the Deccan Riots (1875). Understanding these structural disparities helps civil service aspirants appreciate the complex historic socio-economic challenges that continue to affect Indian agriculture today.</p>
+            `
+        },
+        3: {
+            category: "Ethics & Society",
+            title: "The Ethical Civil Servant: Duty with Empathy",
+            content: `
+                <p>Civil services are often characterized by rigorous rules, structural protocols, and adherence to files. While efficiency is essential, governance loses its true path without empathy.</p>
+                
+                <p>A civil servant acts as the primary link between government policies and the most vulnerable sections of society. If a poor citizen is denied grain distribution simply due to a minor failure in biometrics, a bureaucrat working purely by the letter of the law might turn them away. However, an empathetic civil servant, prioritizing the 'Spirit of Service' and 'Public Interest', will leverage alternative methods of identity verification to provide aid immediately.</p>
+                
+                <p>My work with the Right to Education Act drives has shown me that bureaucratic access must be combined with active community empathy. Public administration is not about wielding command; it is an act of stewardship aimed at transforming lives.</p>
+            `
+        }
+    };
+
+    function openJournalModal(id) {
+        const modal = document.getElementById('journal-modal');
+        const data = essayDatabase[id];
+
+        if (data) {
+            document.getElementById('modal-category').innerText = data.category;
+            document.getElementById('modal-title').innerText = data.title;
+            document.getElementById('modal-content').innerHTML = data.content;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Lock background scroll
+        }
+    }
+
+    function closeJournalModal() {
+        const modal = document.getElementById('journal-modal');
+        modal.classList.add('hidden');
+        document.body.style.overflow = ''; // Unlock background scroll
+    }
+
+    // Contact Form & Success Modal handling
+    function handleContactSubmit(event) {
+        event.preventDefault();
+        
+        // Hide previous screen elements, reset form
+        document.getElementById('contact-form').reset();
+        
+        // Display custom modal
+        const successModal = document.getElementById('success-modal');
+        successModal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeSuccessModal() {
+        const successModal = document.getElementById('success-modal');
+        successModal.classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+</script>
+</body>
+</html>
